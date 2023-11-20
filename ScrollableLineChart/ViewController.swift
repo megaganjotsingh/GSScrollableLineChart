@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lineChart.isCurved  = true
         lineChart.dataEntries = [
             PointEntry(value: 1, label: "one"),
             PointEntry(value: 2, label: "two"),
