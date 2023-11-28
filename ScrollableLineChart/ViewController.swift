@@ -19,13 +19,11 @@ class ViewController: UIViewController {
             PointEntry(value: 1, label: "one"),
             PointEntry(value: 2, label: "two"),
             PointEntry(value: 3, label: "three"),
-            PointEntry(value: 2.5, label: "eq"),
+            PointEntry(value: 2.5, label: "two snd half"),
             PointEntry(value: 1.5, label: "three"),
             PointEntry(value: 3.5, label: "three"),
             PointEntry(value: 2.4, label: "three")
         ]
     }
-
-
 }
 
