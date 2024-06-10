@@ -2,7 +2,7 @@
 
  Hacking with Swift Certificate | SwiftUI Udemy Certificate
 :-------------------------:|:-------------------------:|
-<img src="./Images/Simulator Screen Shot - iPhone 14 - 2023-11-15 at 22.24.45.png" width="250" height="195"> | <img src="./Images/Simulator Screen Shot - iPhone 14 - 2023-11-15 at 22.25.03.png" width="250" height="195"> 
+<img src="./Images/Simulator Screen Shot - iPhone 14 - 2023-11-15 at 22.24.45.png" width="120" height="195"> | <img src="./Images/Simulator Screen Shot - iPhone 14 - 2023-11-15 at 22.25.03.png" width="120" height="195"> 
 
 ## Usage
 
