@@ -1,6 +1,6 @@
 # ScrollableLineChart
 
- Hacking with Swift Certificate | SwiftUI Udemy Certificate
+ Line Chart Without Curve | Curved Line Chart
 :-------------------------:|:-------------------------:|
 <img src="./Images/Simulator Screen Shot - iPhone 14 - 2023-11-15 at 22.24.45.png" width="120" height="195"> | <img src="./Images/Simulator Screen Shot - iPhone 14 - 2023-11-15 at 22.25.03.png" width="120" height="195"> 
 
@@ -27,34 +27,30 @@ func updateData() {
 
 ## Properties
 
-Both `x` and `y` properties are of type `Coordinate`.
-
-If you'd like to show extra dots at your data points use the `Dots` features.
-
-/// gap between each point
+gap between each point
 - `lineGap`: CGFloat = `40.0`
-    
-/// preseved space at top of the chart
+
+preseved space at top of the chart
 - `topSpace`: CGFloat = `40.0`
     
-/// preserved space at bottom of the chart to show labels along the Y axis
+preserved space at bottom of the chart to show labels along the Y axis
 - `bottomSpace`: CGFloat = `40.0`
     
-/// The top most horizontal line in the chart will be 10% higher than the highest value in the chart
+The top most horizontal line in the chart will be 10% higher than the highest value in the chart
 - `topHorizontalLine`: CGFloat = `110.0 / 100.0`
     
 - `isCurved`: Bool = `false`
 
-/// Active or desactive animation on dots
+Active or desactive animation on dots
 - `animateDots`: Bool = `false`
 
-/// Active or desactive dots
+Active or desactive dots
 - `showDots`: Bool = `true`
 
-/// Dot inner Radius
+Dot inner Radius
 - `innerRadius`: CGFloat = `6`
 
-/// Dot outer Radius
+Dot outer Radius
 - `outerRadius`: CGFloat = `8`
 
 ## License
