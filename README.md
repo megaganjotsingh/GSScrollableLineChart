@@ -1,5 +1,7 @@
 # ScrollableLineChart
 
+The ScrollableLineChart library is a robust and versatile Swift library designed to create smooth, interactive, and scrollable line charts in iOS applications. This library caters to developers who need an efficient and customizable way to present time-series data or any other data that benefits from a linear graphical representation.
+
  Line Chart Without Curve | Curved Line Chart
 :-------------------------:|:-------------------------:|
 <img src="./Images/Simulator Screen Shot - iPhone 14 - 2023-11-15 at 22.24.45.png" width="120" height="195"> | <img src="./Images/Simulator Screen Shot - iPhone 14 - 2023-11-15 at 22.25.03.png" width="120" height="195"> 
@@ -18,12 +20,12 @@ func updateData() {
 }
 ```
 
-## Features
-
-- Very simple
-- Easy to customize
-- Pin Pointing
-- Area under the lines
+## Key Features
+- Smooth Scrolling: Effortlessly scroll through large datasets with seamless performance.
+- Customization Options: Adjust line thickness, color, and other aesthetic elements to fit your application's design.
+- Dynamic Data Handling: Easily add, update, or remove data points in real-time, ensuring your charts are always up-to-date.
+- Performance Optimized: Built with performance in mind to handle large datasets without compromising on speed or responsiveness.
+- Easy Integration: Simple and intuitive API for integrating the line chart into your existing iOS projects.
 
 ## Properties
 
@@ -52,6 +54,9 @@ Dot inner Radius
 
 Dot outer Radius
 - `outerRadius`: CGFloat = `8`
+
+## Contribution
+Contributions to the ScrollableLineChart library are welcome. You can fork the repository and submit pull requests to enhance features or fix issues. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
