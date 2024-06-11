@@ -27,13 +27,13 @@ func updateData() {
 
 ## Properties
 
-gap between each point
+Gap between each point
 - `lineGap`: CGFloat = `40.0`
 
-preseved space at top of the chart
+Preseved space at top of the chart
 - `topSpace`: CGFloat = `40.0`
     
-preserved space at bottom of the chart to show labels along the Y axis
+Preserved space at bottom of the chart to show labels along the Y axis
 - `bottomSpace`: CGFloat = `40.0`
     
 The top most horizontal line in the chart will be 10% higher than the highest value in the chart
