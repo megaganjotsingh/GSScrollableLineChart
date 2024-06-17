@@ -8,51 +8,32 @@
 
 import UIKit
 
-struct PointEntry {
+public struct PointEntry {
     let value: CGFloat
     let label: String
+    
+    public init(value: CGFloat, label: String) {
+        self.value = value
+        self.label = label
+    }
 }
 
 extension PointEntry: Comparable {
-    static func <(lhs: PointEntry, rhs: PointEntry) -> Bool {
+    public static func <(lhs: PointEntry, rhs: PointEntry) -> Bool {
         return lhs.value < rhs.value
     }
-    static func ==(lhs: PointEntry, rhs: PointEntry) -> Bool {
+    public static func ==(lhs: PointEntry, rhs: PointEntry) -> Bool {
         return lhs.value == rhs.value
     }
 }
 
-class GSScrollableLineChart: UIView {
+public class GSScrollableLineChartView: UIView {
     
-    /// gap between each point
-    let lineGap: CGFloat = 40.0
+    public var chartProperties: ChartAttributes = .init()
     
-    /// preseved space at top of the chart
-    let topSpace: CGFloat = 40.0
-    
-    /// preserved space at bottom of the chart to show labels along the Y axis
-    let bottomSpace: CGFloat = 40.0
-    
-    /// The top most horizontal line in the chart will be 10% higher than the highest value in the chart
-    let topHorizontalLine: CGFloat = 110.0 / 100.0
-    
-    var isCurved: Bool = false
-
-    /// Active or desactive animation on dots
-    var animateDots: Bool = false
-
-    /// Active or desactive dots
-    var showDots: Bool = true
-
-    /// Dot inner Radius
-    var innerRadius: CGFloat = 6
-
-    /// Dot outer Radius
-    var outerRadius: CGFloat = 8
-    
-//    open var delegate: LineChartDelegate?
-    
-    var dataEntries: [PointEntry]? {
+    public var textProperties: TextAttributes = .init()
+        
+    public var dataEntries: [PointEntry]? {
         didSet {
             self.setNeedsLayout()
         }
@@ -89,7 +70,7 @@ class GSScrollableLineChart: UIView {
         setupView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setupView()
     }
@@ -99,30 +80,30 @@ class GSScrollableLineChart: UIView {
         scrollView.canCancelContentTouches = false
         mainLayer.addSublayer(dataLayer)
         
-        gradientLayer.colors = [#colorLiteral(red: 0.2039215686, green: 0.462745098, blue: 0.9764705882, alpha: 1).cgColor, #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1).cgColor]
+        gradientLayer.colors = [chartProperties.gradientFirstColor.cgColor, chartProperties.gradientSecondColor.cgColor]
         scrollView.layer.addSublayer(gradientLayer)
         scrollView.layer.addSublayer(mainLayer)
         scrollView.layer.addSublayer(dotsLayer)
         
         self.addSubview(scrollView)
         self.layer.addSublayer(gridLayer)
-        self.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
+        self.backgroundColor = chartProperties.bgColor
     }
     
-    override func layoutSubviews() {
+    open override func layoutSubviews() {
         scrollView.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
         if let dataEntries = dataEntries {
-            scrollView.contentSize = CGSize(width: (CGFloat(dataEntries.count) * lineGap) + 15, height: self.frame.size.height)
-            mainLayer.frame = CGRect(x: 0, y: 0, width: CGFloat(dataEntries.count) * lineGap, height: self.frame.size.height)
-            dotsLayer.frame = CGRect(x: 0, y: 0, width: CGFloat(dataEntries.count) * lineGap, height: self.frame.size.height)
-            dataLayer.frame = CGRect(x: 0, y: topSpace, width: mainLayer.frame.width, height: mainLayer.frame.height - topSpace - bottomSpace)
+            scrollView.contentSize = CGSize(width: (CGFloat(dataEntries.count) * chartProperties.lineGap) + 15, height: self.frame.size.height)
+            mainLayer.frame = CGRect(x: 0, y: 0, width: CGFloat(dataEntries.count) * chartProperties.lineGap, height: self.frame.size.height)
+            dotsLayer.frame = CGRect(x: 0, y: 0, width: CGFloat(dataEntries.count) * chartProperties.lineGap, height: self.frame.size.height)
+            dataLayer.frame = CGRect(x: 0, y: chartProperties.topSpace, width: mainLayer.frame.width, height: mainLayer.frame.height - chartProperties.topSpace - chartProperties.bottomSpace)
             gradientLayer.frame = dataLayer.frame
             dataPoints = convertDataEntriesToPoints(entries: dataEntries)
-            gridLayer.frame = CGRect(x: 0, y: topSpace, width: self.frame.width, height: mainLayer.frame.height - topSpace - bottomSpace)
-            if showDots { drawDots() }
+            gridLayer.frame = CGRect(x: 0, y: chartProperties.topSpace, width: self.frame.width, height: mainLayer.frame.height - chartProperties.topSpace - chartProperties.bottomSpace)
+            if chartProperties.showDots { drawDots() }
             clean()
             drawHorizontalLines()
-            if isCurved {
+            if chartProperties.isCurved {
                 drawCurvedChart()
             } else {
                 drawChart()
@@ -140,7 +121,7 @@ class GSScrollableLineChart: UIView {
             let min = entries.min()?.value {
             
             var result: [CGPoint] = []
-            var minMaxRange: CGFloat = CGFloat(max - min) * topHorizontalLine
+            var minMaxRange: CGFloat = CGFloat(max - min) * chartProperties.topHorizontalLine
             if minMaxRange == 0.0 //if it has 0 because of a min and max is 0
             {
                 minMaxRange = 1.0
@@ -148,7 +129,7 @@ class GSScrollableLineChart: UIView {
             
             for i in 0..<entries.count {
                 let height = dataLayer.frame.height * (1 - ((CGFloat(entries[i].value) - CGFloat(min)) / minMaxRange))
-                let point = CGPoint(x: CGFloat(i)*lineGap + 40, y: height)
+                let point = CGPoint(x: CGFloat(i)*chartProperties.lineGap + 40, y: height)
                 result.append(point)
             }
             return result
@@ -167,7 +148,7 @@ class GSScrollableLineChart: UIView {
             let lineLayer = CAShapeLayer()
             lineLayer.path = path.cgPath
             lineLayer.lineWidth = 2
-            lineLayer.strokeColor = #colorLiteral(red: 0.2039215686, green: 0.462745098, blue: 0.9764705882, alpha: 1).cgColor
+            lineLayer.strokeColor = chartProperties.gradientFirstColor.cgColor
             lineLayer.fillColor = UIColor.clear.cgColor
             dataLayer.addSublayer(lineLayer)
         }
@@ -200,7 +181,7 @@ class GSScrollableLineChart: UIView {
             let lineLayer = CAShapeLayer()
             lineLayer.path = path.cgPath
             lineLayer.lineWidth = 2
-            lineLayer.strokeColor = #colorLiteral(red: 0.2039215686, green: 0.462745098, blue: 0.9764705882, alpha: 1).cgColor
+            lineLayer.strokeColor = chartProperties.gradientFirstColor.cgColor
             lineLayer.fillColor = UIColor.clear.cgColor
             dataLayer.addSublayer(lineLayer)
         }
@@ -216,7 +197,7 @@ class GSScrollableLineChart: UIView {
             let path = UIBezierPath()
             path.move(to: CGPoint(x: dataPoints[0].x, y: dataLayer.frame.height))
             path.addLine(to: dataPoints[0])
-            if isCurved,
+            if chartProperties.isCurved,
                 let curvedPath = CurveAlgorithm.shared.createCurvedPath(dataPoints) {
                 path.append(curvedPath)
             } else if let straightPath = createPath() {
@@ -243,16 +224,14 @@ class GSScrollableLineChart: UIView {
             dataEntries.count > 0 {
             for i in 0..<dataEntries.count {
                 let textLayer = CATextLayer()
-                textLayer.frame = CGRect(x: lineGap*CGFloat(i) - lineGap/2 + 40, y: mainLayer.frame.size.height - bottomSpace/2 - 8, width: lineGap, height: 16)
-                textLayer.foregroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1).cgColor
-                textLayer.backgroundColor = UIColor.clear.cgColor
+                textLayer.frame = CGRect(x: chartProperties.lineGap*CGFloat(i) - chartProperties.lineGap/2 + 40, y: mainLayer.frame.size.height - chartProperties.bottomSpace/2 - 8, width: chartProperties.lineGap, height: 16)
+                textLayer.foregroundColor = textProperties.textColor.cgColor
+                textLayer.backgroundColor = textProperties.bgColor.cgColor
+                
                 textLayer.alignmentMode = CATextLayerAlignmentMode.center
                 textLayer.contentsScale = UIScreen.main.scale
-//                textLayer.font = CTFontCreateWithName(UIFont.systemFont(ofSize: 0).fontName as CFString, 0, nil)
-//                textLayer.fontSize = 11
-//                textLayer.string = dataEntries[i].label
                 textLayer.string =
-                self.attributedString(from: dataEntries[i].label, boldRange: NSRange(location: 0, length: 1), MaxFontSize: 11, MinFontSize: 9, textColor: #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+                self.attributedString(from: dataEntries[i].label, boldRange: textProperties.boldRange, MaxFontSize: textProperties.maxFontSize, MinFontSize: textProperties.minFontSize, textColor: textProperties.textColor)
                 mainLayer.addSublayer(textLayer)
             }
         }
@@ -266,54 +245,48 @@ class GSScrollableLineChart: UIView {
             return
         }
         
-        var gridValues: [CGFloat]? = nil
-//        if dataEntries.count < 4 && dataEntries.count > 0 {
-//            gridValues = [0, 1]
-//        } else if dataEntries.count >= 4 {
-            gridValues = [0, 0.25, 0.5, 0.75, 1]
-//        }
-        if let gridValues = gridValues {
-            for value in gridValues {
-                let height = value * gridLayer.frame.size.height
-                
-                let path = UIBezierPath()
-                path.move(to: CGPoint(x: 0, y: height))
-                path.addLine(to: CGPoint(x: gridLayer.frame.size.width, y: height))
-                
-                let lineLayer = CAShapeLayer()
-                lineLayer.path = path.cgPath
-                lineLayer.fillColor = UIColor.clear.cgColor
-                lineLayer.strokeColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1).cgColor
-                lineLayer.lineWidth = 0.5
-                if (
-//                    value > 0.0 //this is for top line
-//                    &&
-                    value < 1.0 //this is for base line
-                    ) {
-                    lineLayer.lineDashPattern = [4, 4]
-                }
-                
-                gridLayer.addSublayer(lineLayer)
-                
-                var minMaxGap:CGFloat = 0
-                var lineValue:Double = 0
-                if let max = dataEntries.max()?.value,
-                    let min = dataEntries.min()?.value {
-                    minMaxGap = CGFloat(max - min) * topHorizontalLine
-                    lineValue = (Double((1-value) * minMaxGap) + Double(min)).rounded(toPlaces: 1)
-                }
-                
-                let textLayer = CATextLayer()
-                textLayer.frame = CGRect(x: 4, y: height, width: 50, height: 16)
-                textLayer.foregroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1).cgColor
-                textLayer.backgroundColor = UIColor.clear.cgColor
-                textLayer.contentsScale = UIScreen.main.scale
-                textLayer.font = CTFontCreateWithName(UIFont.systemFont(ofSize: 0).fontName as CFString, 0, nil)
-                textLayer.fontSize = 12
-                textLayer.string = "\(lineValue)"
-                
-                gridLayer.addSublayer(textLayer)
+        let gridValues = chartProperties.gridValues
+        
+        for value in gridValues {
+            let height = value * gridLayer.frame.size.height
+            
+            let path = UIBezierPath()
+            path.move(to: CGPoint(x: 0, y: height))
+            path.addLine(to: CGPoint(x: gridLayer.frame.size.width, y: height))
+            
+            let lineLayer = CAShapeLayer()
+            lineLayer.path = path.cgPath
+            lineLayer.fillColor = UIColor.clear.cgColor
+            lineLayer.strokeColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1).cgColor
+            lineLayer.lineWidth = 0.5
+            if chartProperties.showTopLineDotted ? value < 1.0 : (
+                value > 0.0 //this is for top line
+                &&
+                value < 1.0 //this is for base line
+            ) {
+                lineLayer.lineDashPattern = [4, 4]
             }
+            
+            gridLayer.addSublayer(lineLayer)
+            
+            var minMaxGap:CGFloat = 0
+            var lineValue:Double = 0
+            if let max = dataEntries.max()?.value,
+               let min = dataEntries.min()?.value {
+                minMaxGap = CGFloat(max - min) * chartProperties.topHorizontalLine
+                lineValue = (Double((1-value) * minMaxGap) + Double(min)).rounded(toPlaces: 1)
+            }
+            
+            let textLayer = CATextLayer()
+            textLayer.frame = CGRect(x: 4, y: height, width: textProperties.minFontSize * 2, height: textProperties.minFontSize)
+            textLayer.foregroundColor = textProperties.textColor.cgColor
+            textLayer.backgroundColor = textProperties.bgColor.cgColor
+            textLayer.contentsScale = UIScreen.main.scale
+            textLayer.font = CTFontCreateWithName(UIFont.systemFont(ofSize: 0).fontName as CFString, 0, nil)
+            textLayer.fontSize = textProperties.minFontSize
+            textLayer.string = "\(lineValue)"
+            
+            gridLayer.addSublayer(textLayer)
         }
     }
     
@@ -336,26 +309,23 @@ class GSScrollableLineChart: UIView {
         dotsLayer.sublayers?.forEach({$0.removeFromSuperlayer()})
         if let dataPoints = dataPoints {
             for dataPoint in dataPoints {
-                //for curved path
-//                let xValue = dataPoint.x - outerRadius/2
-//                let yValue = (dataPoint.y + lineGap) - (outerRadius * 2)
                 //for straight lines path
-                let xValue = dataPoint.x - outerRadius/2
-                let yValue = (dataPoint.y + lineGap) - (outerRadius*0.5)
+                let xValue = dataPoint.x - chartProperties.outerRadius/2
+                let yValue = (dataPoint.y + chartProperties.lineGap) - (chartProperties.outerRadius*0.5)
                 let dotLayer = DotCALayer()
-                dotLayer.dotInnerColor = #colorLiteral(red: 0.2039215686, green: 0.462745098, blue: 0.9764705882, alpha: 1)
-                dotLayer.innerRadius = innerRadius
+                dotLayer.dotInnerColor = chartProperties.gradientFirstColor
+                dotLayer.innerRadius = chartProperties.innerRadius
                 dotLayer.backgroundColor = UIColor.white.cgColor
-                dotLayer.cornerRadius = outerRadius / 2
+                dotLayer.cornerRadius = chartProperties.outerRadius / 2
                 dotLayer.shadowOffset = CGSize(width: 0, height: 0)
                 dotLayer.shadowColor = #colorLiteral(red: 0.1605761051, green: 0.1642630696, blue: 0.1891490221, alpha: 1)
                 dotLayer.shadowRadius = 1
                 dotLayer.shadowOpacity = 0.8
-                dotLayer.frame = CGRect(x: xValue, y: yValue, width: outerRadius, height: outerRadius)
+                dotLayer.frame = CGRect(x: xValue, y: yValue, width: chartProperties.outerRadius, height: chartProperties.outerRadius)
                 dotLayers.append(dotLayer)
                     dotsLayer.addSublayer(dotLayer)
                 
-                if animateDots {
+                if chartProperties.animateDots {
                     let anim = CABasicAnimation(keyPath: "opacity")
                     anim.duration = 1.0
                     anim.fromValue = 0
@@ -372,14 +342,14 @@ class GSScrollableLineChart: UIView {
         if let dataPoints = dataPoints {
             for (index,dataPoint) in dataPoints.enumerated() {
                 let xValue = dataPoint.x - 20
-                let yValue = (dataPoint.y + lineGap) - (outerRadius * 3)
+                let yValue = (dataPoint.y + chartProperties.lineGap) - (chartProperties.outerRadius * 3)
                 let textLayer = CATextLayer()
                 textLayer.frame = CGRect(x: xValue, y: yValue, width: 40, height: 30)
-                textLayer.foregroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1).cgColor
+                textLayer.foregroundColor = textProperties.textColor.cgColor
                 textLayer.backgroundColor = UIColor.clear.cgColor
                 textLayer.alignmentMode = CATextLayerAlignmentMode.center
                 textLayer.contentsScale = UIScreen.main.scale
-                textLayer.fontSize = 11
+                textLayer.fontSize = textProperties.minFontSize
                 textLayer.string = "\(dataEntries?[index].value ?? 0)"
                 dotsLayer.addSublayer(textLayer)
             }
@@ -389,7 +359,6 @@ class GSScrollableLineChart: UIView {
 
 extension UIView {
     func attributedString(from string: String, boldRange: NSRange?, MaxFontSize: CGFloat, MinFontSize: CGFloat, textColor: UIColor) -> NSAttributedString {
-    //        let fontSize = UIFont.systemFontSize
             let attrs = [
                 NSAttributedString.Key.font: UIFont.systemFont(ofSize: MinFontSize),
                 NSAttributedString.Key.foregroundColor: textColor
