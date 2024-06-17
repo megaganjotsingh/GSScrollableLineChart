@@ -13,11 +13,11 @@
 		6133C36D0C03E3D69169B73FE4511C9A /* Pods-GSScrollableLineChart_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F7BD5CEA923E94511435B4868A02EC /* Pods-GSScrollableLineChart_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		681CF9F8A5198290EF67F7C63E1D9AC4 /* GSScrollableLineChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9697454C4E580D853677A13D73857FA5 /* GSScrollableLineChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B1C3A45BCF37B9CE37DCCCE3921A804 /* Pods-GSScrollableLineChart_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 594293CEF79E19509CE67C20117B70DE /* Pods-GSScrollableLineChart_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		938970632C1FDEBD00FCAA31 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389705F2C1FDEBD00FCAA31 /* CurveAlgorithm.swift */; };
-		938970642C1FDEBD00FCAA31 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970602C1FDEBD00FCAA31 /* DotCALayer.swift */; };
-		938970652C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970612C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift */; };
-		938970672C1FE6FF00FCAA31 /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970662C1FE6FF00FCAA31 /* TextAttributes.swift */; };
-		938970692C1FE78500FCAA31 /* ChartAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970682C1FE78500FCAA31 /* ChartAttributes.swift */; };
+		938970712C2056F500FCAA31 /* ChartAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389706B2C2056F500FCAA31 /* ChartAttributes.swift */; };
+		938970722C2056F500FCAA31 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389706C2C2056F500FCAA31 /* CurveAlgorithm.swift */; };
+		938970732C2056F500FCAA31 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389706D2C2056F500FCAA31 /* DotCALayer.swift */; };
+		938970742C2056F500FCAA31 /* GSScrollableLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389706E2C2056F500FCAA31 /* GSScrollableLineChartView.swift */; };
+		938970752C2056F500FCAA31 /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389706F2C2056F500FCAA31 /* TextAttributes.swift */; };
 		AA74904921D1EC2565366F8CFB3EA771 /* Pods-GSScrollableLineChart_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79105DBCA2BBE7014E61E7F161A2D515 /* Pods-GSScrollableLineChart_Example-dummy.m */; };
 		AF2EE79EC1D191C46B8B870187B6854B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		D53081F0D53536DA4B4580B47408BA41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -61,11 +61,11 @@
 		8FCB037BD53E4A1B958C2E617B85A4F8 /* Pods-GSScrollableLineChart_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSScrollableLineChart_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		912D239E54482F8518B4B51CA2D20804 /* GSScrollableLineChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSScrollableLineChart.release.xcconfig; sourceTree = "<group>"; };
 		9251B524525E67725F4451A6FF690242 /* GSScrollableLineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSScrollableLineChart-dummy.m"; sourceTree = "<group>"; };
-		9389705F2C1FDEBD00FCAA31 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
-		938970602C1FDEBD00FCAA31 /* DotCALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
-		938970612C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSScrollableLineChartView.swift; sourceTree = "<group>"; };
-		938970662C1FE6FF00FCAA31 /* TextAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAttributes.swift; sourceTree = "<group>"; };
-		938970682C1FE78500FCAA31 /* ChartAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartAttributes.swift; sourceTree = "<group>"; };
+		9389706B2C2056F500FCAA31 /* ChartAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartAttributes.swift; sourceTree = "<group>"; };
+		9389706C2C2056F500FCAA31 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
+		9389706D2C2056F500FCAA31 /* DotCALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
+		9389706E2C2056F500FCAA31 /* GSScrollableLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSScrollableLineChartView.swift; sourceTree = "<group>"; };
+		9389706F2C2056F500FCAA31 /* TextAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAttributes.swift; sourceTree = "<group>"; };
 		9697454C4E580D853677A13D73857FA5 /* GSScrollableLineChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSScrollableLineChart-umbrella.h"; sourceTree = "<group>"; };
 		9A1936800A57C248DD8BF1B25DD60CFB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -175,17 +175,17 @@
 			path = "Target Support Files/Pods-GSScrollableLineChart_Example";
 			sourceTree = "<group>";
 		};
-		938970622C1FDEBD00FCAA31 /* Source */ = {
+		938970702C2056F500FCAA31 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				9389705F2C1FDEBD00FCAA31 /* CurveAlgorithm.swift */,
-				938970602C1FDEBD00FCAA31 /* DotCALayer.swift */,
-				938970612C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift */,
-				938970662C1FE6FF00FCAA31 /* TextAttributes.swift */,
-				938970682C1FE78500FCAA31 /* ChartAttributes.swift */,
+				9389706B2C2056F500FCAA31 /* ChartAttributes.swift */,
+				9389706C2C2056F500FCAA31 /* CurveAlgorithm.swift */,
+				9389706D2C2056F500FCAA31 /* DotCALayer.swift */,
+				9389706E2C2056F500FCAA31 /* GSScrollableLineChartView.swift */,
+				9389706F2C2056F500FCAA31 /* TextAttributes.swift */,
 			);
 			name = Source;
-			path = ../../ScrollableLineChart/ScrollableLineChart/Source;
+			path = ../../../Desktop/Source;
 			sourceTree = "<group>";
 		};
 		A5DA59B59B48AA4C566AB929937735BF /* Pods-GSScrollableLineChart_Tests */ = {
@@ -236,7 +236,7 @@
 		F8C98BEDFF4AC9C41E2101B42E21BB14 /* GSScrollableLineChart */ = {
 			isa = PBXGroup;
 			children = (
-				938970622C1FDEBD00FCAA31 /* Source */,
+				938970702C2056F500FCAA31 /* Source */,
 				434AE0CDE22BECB64C64AE9A018240B3 /* Pod */,
 				3C27A34D289BAB364B1B8219C0F4BF36 /* Support Files */,
 			);
@@ -404,12 +404,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				938970672C1FE6FF00FCAA31 /* TextAttributes.swift in Sources */,
 				0E34341F84D1F19F13F98A79CB226A5D /* GSScrollableLineChart-dummy.m in Sources */,
-				938970652C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift in Sources */,
-				938970692C1FE78500FCAA31 /* ChartAttributes.swift in Sources */,
-				938970642C1FDEBD00FCAA31 /* DotCALayer.swift in Sources */,
-				938970632C1FDEBD00FCAA31 /* CurveAlgorithm.swift in Sources */,
+				938970712C2056F500FCAA31 /* ChartAttributes.swift in Sources */,
+				938970742C2056F500FCAA31 /* GSScrollableLineChartView.swift in Sources */,
+				938970722C2056F500FCAA31 /* CurveAlgorithm.swift in Sources */,
+				938970732C2056F500FCAA31 /* DotCALayer.swift in Sources */,
+				938970752C2056F500FCAA31 /* TextAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
