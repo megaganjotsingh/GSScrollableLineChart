@@ -75,4 +75,4 @@ megaganjotsingh, megaganjotsingh@gmail.com
 GSScrollableLineChart is available under the MIT license. See the LICENSE file for more info.
 
 ## Contribution
-Contributions to the ScrollableLineChart library are welcome. You can fork the repository and submit pull requests to enhance features or fix issues. For major changes, please open an issue first to discuss what you would like to change.
+Contributions to the GSScrollableLineChart library are welcome. You can fork the repository and submit pull requests to enhance features or fix issues. For major changes, please open an issue first to discuss what you would like to change.
