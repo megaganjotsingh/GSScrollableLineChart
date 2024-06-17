@@ -20,6 +20,10 @@ func updateData() {
 }
 ```
 
+## Requirements
+
+Swift Version - 5.0
+
 ## Key Features
 - Smooth Scrolling: Effortlessly scroll through large datasets with seamless performance.
 - Customization Options: Adjust line thickness, color, and other aesthetic elements to fit your application's design.
