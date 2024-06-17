@@ -1,0 +1,6 @@
+framework module GSScrollableLineChart {
+  umbrella header "GSScrollableLineChart-umbrella.h"
+
+  export *
+  module * { export * }
+}

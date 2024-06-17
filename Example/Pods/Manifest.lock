@@ -1,0 +1,16 @@
+PODS:
+  - GSScrollableLineChart (0.1.0)
+
+DEPENDENCIES:
+  - GSScrollableLineChart (from `../`)
+
+EXTERNAL SOURCES:
+  GSScrollableLineChart:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GSScrollableLineChart: ecc8f7eb39b9a0c0f0bdbbe653bbd999e964ec0f
+
+PODFILE CHECKSUM: d20061b046f77807bb585cefdf71af88f2975666
+
+COCOAPODS: 1.14.3

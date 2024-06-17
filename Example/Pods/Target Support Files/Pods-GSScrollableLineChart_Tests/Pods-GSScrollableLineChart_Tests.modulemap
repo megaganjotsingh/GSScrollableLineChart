@@ -1,0 +1,6 @@
+framework module Pods_GSScrollableLineChart_Tests {
+  umbrella header "Pods-GSScrollableLineChart_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

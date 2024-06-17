@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E34341F84D1F19F13F98A79CB226A5D /* GSScrollableLineChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9251B524525E67725F4451A6FF690242 /* GSScrollableLineChart-dummy.m */; };
+		18BA4FE21CFB558E60125E63C2776568 /* Pods-GSScrollableLineChart_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 692A30E8EEA24300C946895FFB678FD0 /* Pods-GSScrollableLineChart_Tests-dummy.m */; };
+		4C97C2B53E2624FB27CB794194395302 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6133C36D0C03E3D69169B73FE4511C9A /* Pods-GSScrollableLineChart_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F7BD5CEA923E94511435B4868A02EC /* Pods-GSScrollableLineChart_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		681CF9F8A5198290EF67F7C63E1D9AC4 /* GSScrollableLineChart-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9697454C4E580D853677A13D73857FA5 /* GSScrollableLineChart-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B1C3A45BCF37B9CE37DCCCE3921A804 /* Pods-GSScrollableLineChart_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 594293CEF79E19509CE67C20117B70DE /* Pods-GSScrollableLineChart_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		938970632C1FDEBD00FCAA31 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389705F2C1FDEBD00FCAA31 /* CurveAlgorithm.swift */; };
+		938970642C1FDEBD00FCAA31 /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970602C1FDEBD00FCAA31 /* DotCALayer.swift */; };
+		938970652C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970612C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift */; };
+		938970672C1FE6FF00FCAA31 /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970662C1FE6FF00FCAA31 /* TextAttributes.swift */; };
+		938970692C1FE78500FCAA31 /* ChartAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938970682C1FE78500FCAA31 /* ChartAttributes.swift */; };
+		AA74904921D1EC2565366F8CFB3EA771 /* Pods-GSScrollableLineChart_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79105DBCA2BBE7014E61E7F161A2D515 /* Pods-GSScrollableLineChart_Example-dummy.m */; };
+		AF2EE79EC1D191C46B8B870187B6854B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D53081F0D53536DA4B4580B47408BA41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		244BF2DB51422CCCEA38E69AC10765CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A225768BBA804354A50134E3495EB16B;
+			remoteInfo = "Pods-GSScrollableLineChart_Example";
+		};
+		9A49E615FAC43DB63D82A675763A2B43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A027A9F7B04826D5004F24806466631;
+			remoteInfo = GSScrollableLineChart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027E27AB4B07EA85071E2737A9C376B6 /* Pods-GSScrollableLineChart_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GSScrollableLineChart_Example.modulemap"; sourceTree = "<group>"; };
+		09EBADA9978EA2984309202B3E3132D2 /* Pods-GSScrollableLineChart_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GSScrollableLineChart_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0F64CE0D49ECB4D629526F73ABA14FF5 /* Pods-GSScrollableLineChart_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GSScrollableLineChart_Example"; path = Pods_GSScrollableLineChart_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35B66C4666F8BB4CA0F49DBA0801D58F /* GSScrollableLineChart.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GSScrollableLineChart.modulemap; sourceTree = "<group>"; };
+		393A9D884F85501FA69253F03408B8F3 /* GSScrollableLineChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSScrollableLineChart.debug.xcconfig; sourceTree = "<group>"; };
+		3DF709899A5AC67874222118FE0F4707 /* GSScrollableLineChart.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GSScrollableLineChart.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3F5830F0A292277307E2668D5492DA76 /* GSScrollableLineChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSScrollableLineChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4876B53C99F9D48C2E589B1B64965C1A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5648C7AE47CCA6165492FBAA5DA089D3 /* Pods-GSScrollableLineChart_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GSScrollableLineChart_Tests"; path = Pods_GSScrollableLineChart_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		594293CEF79E19509CE67C20117B70DE /* Pods-GSScrollableLineChart_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSScrollableLineChart_Tests-umbrella.h"; sourceTree = "<group>"; };
+		677D4A5068F4A7768AA494F72084089F /* Pods-GSScrollableLineChart_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSScrollableLineChart_Example-Info.plist"; sourceTree = "<group>"; };
+		692A30E8EEA24300C946895FFB678FD0 /* Pods-GSScrollableLineChart_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSScrollableLineChart_Tests-dummy.m"; sourceTree = "<group>"; };
+		6D0D5ABFFB87424FCCFF1A29ED43C763 /* Pods-GSScrollableLineChart_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSScrollableLineChart_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D4B22BEE2A438B7373EDFBD5BF10A73 /* Pods-GSScrollableLineChart_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSScrollableLineChart_Tests-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		79105DBCA2BBE7014E61E7F161A2D515 /* Pods-GSScrollableLineChart_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GSScrollableLineChart_Example-dummy.m"; sourceTree = "<group>"; };
+		8B376062C67104D075AEEAA76BB4D277 /* Pods-GSScrollableLineChart_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GSScrollableLineChart_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8FCB037BD53E4A1B958C2E617B85A4F8 /* Pods-GSScrollableLineChart_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSScrollableLineChart_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		912D239E54482F8518B4B51CA2D20804 /* GSScrollableLineChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSScrollableLineChart.release.xcconfig; sourceTree = "<group>"; };
+		9251B524525E67725F4451A6FF690242 /* GSScrollableLineChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSScrollableLineChart-dummy.m"; sourceTree = "<group>"; };
+		9389705F2C1FDEBD00FCAA31 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
+		938970602C1FDEBD00FCAA31 /* DotCALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
+		938970612C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSScrollableLineChartView.swift; sourceTree = "<group>"; };
+		938970662C1FE6FF00FCAA31 /* TextAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAttributes.swift; sourceTree = "<group>"; };
+		938970682C1FE78500FCAA31 /* ChartAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartAttributes.swift; sourceTree = "<group>"; };
+		9697454C4E580D853677A13D73857FA5 /* GSScrollableLineChart-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSScrollableLineChart-umbrella.h"; sourceTree = "<group>"; };
+		9A1936800A57C248DD8BF1B25DD60CFB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0FC0D8D3BCBB3B67A522D7037F67011 /* Pods-GSScrollableLineChart_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GSScrollableLineChart_Tests.modulemap"; sourceTree = "<group>"; };
+		A2F7BD5CEA923E94511435B4868A02EC /* Pods-GSScrollableLineChart_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GSScrollableLineChart_Example-umbrella.h"; sourceTree = "<group>"; };
+		A593256DFE2ED5D715BE2D38B9D89137 /* GSScrollableLineChart-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GSScrollableLineChart-Info.plist"; sourceTree = "<group>"; };
+		C7964F6FC2A0F9CC2712BC7EF04A4774 /* GSScrollableLineChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSScrollableLineChart-prefix.pch"; sourceTree = "<group>"; };
+		CD64202B109A4B1F24DDCFEBF54B664D /* Pods-GSScrollableLineChart_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSScrollableLineChart_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D9AFC09BF0E61D72E4374BEF1D0CB8D2 /* Pods-GSScrollableLineChart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GSScrollableLineChart_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E455A24F14BF872B13B2AD5E3C6756F4 /* Pods-GSScrollableLineChart_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GSScrollableLineChart_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E458D22247C27A1F1D3A10B3608137B9 /* Pods-GSScrollableLineChart_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSScrollableLineChart_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EA87F7007204A1FF3470C4CF858CD361 /* Pods-GSScrollableLineChart_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GSScrollableLineChart_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F6AC4328351DDC6167E6807ED03BCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C97C2B53E2624FB27CB794194395302 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EAA6E395DAAA8DBA3DDB19FB8AF7F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2EE79EC1D191C46B8B870187B6854B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC98A54824040733130DD12EC0EF7E48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53081F0D53536DA4B4580B47408BA41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30795640E7F51DBF1EA1082668D11E81 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				85814F1B3F3CED8D635E676D8768033A /* Pods-GSScrollableLineChart_Example */,
+				A5DA59B59B48AA4C566AB929937735BF /* Pods-GSScrollableLineChart_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3C27A34D289BAB364B1B8219C0F4BF36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35B66C4666F8BB4CA0F49DBA0801D58F /* GSScrollableLineChart.modulemap */,
+				9251B524525E67725F4451A6FF690242 /* GSScrollableLineChart-dummy.m */,
+				A593256DFE2ED5D715BE2D38B9D89137 /* GSScrollableLineChart-Info.plist */,
+				C7964F6FC2A0F9CC2712BC7EF04A4774 /* GSScrollableLineChart-prefix.pch */,
+				9697454C4E580D853677A13D73857FA5 /* GSScrollableLineChart-umbrella.h */,
+				393A9D884F85501FA69253F03408B8F3 /* GSScrollableLineChart.debug.xcconfig */,
+				912D239E54482F8518B4B51CA2D20804 /* GSScrollableLineChart.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GSScrollableLineChart";
+			sourceTree = "<group>";
+		};
+		434AE0CDE22BECB64C64AE9A018240B3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3DF709899A5AC67874222118FE0F4707 /* GSScrollableLineChart.podspec */,
+				9A1936800A57C248DD8BF1B25DD60CFB /* LICENSE */,
+				4876B53C99F9D48C2E589B1B64965C1A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		76790C1DA834984E59FDD6F2D2ED742C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8C98BEDFF4AC9C41E2101B42E21BB14 /* GSScrollableLineChart */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		85814F1B3F3CED8D635E676D8768033A /* Pods-GSScrollableLineChart_Example */ = {
+			isa = PBXGroup;
+			children = (
+				027E27AB4B07EA85071E2737A9C376B6 /* Pods-GSScrollableLineChart_Example.modulemap */,
+				E455A24F14BF872B13B2AD5E3C6756F4 /* Pods-GSScrollableLineChart_Example-acknowledgements.markdown */,
+				E458D22247C27A1F1D3A10B3608137B9 /* Pods-GSScrollableLineChart_Example-acknowledgements.plist */,
+				79105DBCA2BBE7014E61E7F161A2D515 /* Pods-GSScrollableLineChart_Example-dummy.m */,
+				09EBADA9978EA2984309202B3E3132D2 /* Pods-GSScrollableLineChart_Example-frameworks.sh */,
+				677D4A5068F4A7768AA494F72084089F /* Pods-GSScrollableLineChart_Example-Info.plist */,
+				A2F7BD5CEA923E94511435B4868A02EC /* Pods-GSScrollableLineChart_Example-umbrella.h */,
+				CD64202B109A4B1F24DDCFEBF54B664D /* Pods-GSScrollableLineChart_Example.debug.xcconfig */,
+				D9AFC09BF0E61D72E4374BEF1D0CB8D2 /* Pods-GSScrollableLineChart_Example.release.xcconfig */,
+			);
+			name = "Pods-GSScrollableLineChart_Example";
+			path = "Target Support Files/Pods-GSScrollableLineChart_Example";
+			sourceTree = "<group>";
+		};
+		938970622C1FDEBD00FCAA31 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9389705F2C1FDEBD00FCAA31 /* CurveAlgorithm.swift */,
+				938970602C1FDEBD00FCAA31 /* DotCALayer.swift */,
+				938970612C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift */,
+				938970662C1FE6FF00FCAA31 /* TextAttributes.swift */,
+				938970682C1FE78500FCAA31 /* ChartAttributes.swift */,
+			);
+			name = Source;
+			path = ../../ScrollableLineChart/ScrollableLineChart/Source;
+			sourceTree = "<group>";
+		};
+		A5DA59B59B48AA4C566AB929937735BF /* Pods-GSScrollableLineChart_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A0FC0D8D3BCBB3B67A522D7037F67011 /* Pods-GSScrollableLineChart_Tests.modulemap */,
+				8B376062C67104D075AEEAA76BB4D277 /* Pods-GSScrollableLineChart_Tests-acknowledgements.markdown */,
+				EA87F7007204A1FF3470C4CF858CD361 /* Pods-GSScrollableLineChart_Tests-acknowledgements.plist */,
+				692A30E8EEA24300C946895FFB678FD0 /* Pods-GSScrollableLineChart_Tests-dummy.m */,
+				6D4B22BEE2A438B7373EDFBD5BF10A73 /* Pods-GSScrollableLineChart_Tests-Info.plist */,
+				594293CEF79E19509CE67C20117B70DE /* Pods-GSScrollableLineChart_Tests-umbrella.h */,
+				6D0D5ABFFB87424FCCFF1A29ED43C763 /* Pods-GSScrollableLineChart_Tests.debug.xcconfig */,
+				8FCB037BD53E4A1B958C2E617B85A4F8 /* Pods-GSScrollableLineChart_Tests.release.xcconfig */,
+			);
+			name = "Pods-GSScrollableLineChart_Tests";
+			path = "Target Support Files/Pods-GSScrollableLineChart_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				76790C1DA834984E59FDD6F2D2ED742C /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D9E8847A8B066648ECBE0A5FF25B5471 /* Products */,
+				30795640E7F51DBF1EA1082668D11E81 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9E8847A8B066648ECBE0A5FF25B5471 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F5830F0A292277307E2668D5492DA76 /* GSScrollableLineChart.framework */,
+				0F64CE0D49ECB4D629526F73ABA14FF5 /* Pods-GSScrollableLineChart_Example */,
+				5648C7AE47CCA6165492FBAA5DA089D3 /* Pods-GSScrollableLineChart_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8C98BEDFF4AC9C41E2101B42E21BB14 /* GSScrollableLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				938970622C1FDEBD00FCAA31 /* Source */,
+				434AE0CDE22BECB64C64AE9A018240B3 /* Pod */,
+				3C27A34D289BAB364B1B8219C0F4BF36 /* Support Files */,
+			);
+			name = GSScrollableLineChart;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C888C77AD0D50923C6513FE7C0C2091 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681CF9F8A5198290EF67F7C63E1D9AC4 /* GSScrollableLineChart-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25008D446DA789E12277FD8A537B3B86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1C3A45BCF37B9CE37DCCCE3921A804 /* Pods-GSScrollableLineChart_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A359F3BDF81FCF6C72C00D4B6FBF178 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6133C36D0C03E3D69169B73FE4511C9A /* Pods-GSScrollableLineChart_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2A027A9F7B04826D5004F24806466631 /* GSScrollableLineChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C16C344D225F095300EB0ACFE9F0E9 /* Build configuration list for PBXNativeTarget "GSScrollableLineChart" */;
+			buildPhases = (
+				0C888C77AD0D50923C6513FE7C0C2091 /* Headers */,
+				C813885CCE3F3459638D40C35370F17E /* Sources */,
+				18F6AC4328351DDC6167E6807ED03BCE /* Frameworks */,
+				FABCE2F42D3323945BCB92E7DBCCD238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSScrollableLineChart;
+			productName = GSScrollableLineChart;
+			productReference = 3F5830F0A292277307E2668D5492DA76 /* GSScrollableLineChart.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A225768BBA804354A50134E3495EB16B /* Pods-GSScrollableLineChart_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F97855FCB7A6F24A5F47A4F8314387A6 /* Build configuration list for PBXNativeTarget "Pods-GSScrollableLineChart_Example" */;
+			buildPhases = (
+				6A359F3BDF81FCF6C72C00D4B6FBF178 /* Headers */,
+				B2E002D3FCC79083E47D69AC9FDDA107 /* Sources */,
+				BC98A54824040733130DD12EC0EF7E48 /* Frameworks */,
+				4B8E92BB3E44F448F3109461918AF192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A26C42E7588FCF727EF5FB0ECE6A8F8 /* PBXTargetDependency */,
+			);
+			name = "Pods-GSScrollableLineChart_Example";
+			productName = Pods_GSScrollableLineChart_Example;
+			productReference = 0F64CE0D49ECB4D629526F73ABA14FF5 /* Pods-GSScrollableLineChart_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		F9B6C6F03D6B5ADD676E4B649C539795 /* Pods-GSScrollableLineChart_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F5E94AAF83D7194BE3F13D66BFA9C26 /* Build configuration list for PBXNativeTarget "Pods-GSScrollableLineChart_Tests" */;
+			buildPhases = (
+				25008D446DA789E12277FD8A537B3B86 /* Headers */,
+				199677C71A34EA94D6B11A5A5C10D4E6 /* Sources */,
+				3EAA6E395DAAA8DBA3DDB19FB8AF7F04 /* Frameworks */,
+				04B83768EE2DC1A8D390E7D9CCDA81C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EDCAEE6A6A228B0EE2330E9A8C4C103 /* PBXTargetDependency */,
+			);
+			name = "Pods-GSScrollableLineChart_Tests";
+			productName = Pods_GSScrollableLineChart_Tests;
+			productReference = 5648C7AE47CCA6165492FBAA5DA089D3 /* Pods-GSScrollableLineChart_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D9E8847A8B066648ECBE0A5FF25B5471 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A027A9F7B04826D5004F24806466631 /* GSScrollableLineChart */,
+				A225768BBA804354A50134E3495EB16B /* Pods-GSScrollableLineChart_Example */,
+				F9B6C6F03D6B5ADD676E4B649C539795 /* Pods-GSScrollableLineChart_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B83768EE2DC1A8D390E7D9CCDA81C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B8E92BB3E44F448F3109461918AF192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FABCE2F42D3323945BCB92E7DBCCD238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		199677C71A34EA94D6B11A5A5C10D4E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BA4FE21CFB558E60125E63C2776568 /* Pods-GSScrollableLineChart_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E002D3FCC79083E47D69AC9FDDA107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA74904921D1EC2565366F8CFB3EA771 /* Pods-GSScrollableLineChart_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C813885CCE3F3459638D40C35370F17E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938970672C1FE6FF00FCAA31 /* TextAttributes.swift in Sources */,
+				0E34341F84D1F19F13F98A79CB226A5D /* GSScrollableLineChart-dummy.m in Sources */,
+				938970652C1FDEBD00FCAA31 /* GSScrollableLineChartView.swift in Sources */,
+				938970692C1FE78500FCAA31 /* ChartAttributes.swift in Sources */,
+				938970642C1FDEBD00FCAA31 /* DotCALayer.swift in Sources */,
+				938970632C1FDEBD00FCAA31 /* CurveAlgorithm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EDCAEE6A6A228B0EE2330E9A8C4C103 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GSScrollableLineChart_Example";
+			target = A225768BBA804354A50134E3495EB16B /* Pods-GSScrollableLineChart_Example */;
+			targetProxy = 244BF2DB51422CCCEA38E69AC10765CD /* PBXContainerItemProxy */;
+		};
+		3A26C42E7588FCF727EF5FB0ECE6A8F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GSScrollableLineChart;
+			target = 2A027A9F7B04826D5004F24806466631 /* GSScrollableLineChart */;
+			targetProxy = 9A49E615FAC43DB63D82A675763A2B43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08A72AD9933BAFE1FC6DDA94FD0DC48A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393A9D884F85501FA69253F03408B8F3 /* GSScrollableLineChart.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GSScrollableLineChart/GSScrollableLineChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GSScrollableLineChart/GSScrollableLineChart-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GSScrollableLineChart/GSScrollableLineChart.modulemap";
+				PRODUCT_MODULE_NAME = GSScrollableLineChart;
+				PRODUCT_NAME = GSScrollableLineChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F9E0E4F6898B8CBFA21B928199A6505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9AFC09BF0E61D72E4374BEF1D0CB8D2 /* Pods-GSScrollableLineChart_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GSScrollableLineChart_Example/Pods-GSScrollableLineChart_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GSScrollableLineChart_Example/Pods-GSScrollableLineChart_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		833D9688E7C80DA6469E799EAC94E184 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD64202B109A4B1F24DDCFEBF54B664D /* Pods-GSScrollableLineChart_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GSScrollableLineChart_Example/Pods-GSScrollableLineChart_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GSScrollableLineChart_Example/Pods-GSScrollableLineChart_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D01C684ABEFB0A76278A2F964B84E4B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D0D5ABFFB87424FCCFF1A29ED43C763 /* Pods-GSScrollableLineChart_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GSScrollableLineChart_Tests/Pods-GSScrollableLineChart_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GSScrollableLineChart_Tests/Pods-GSScrollableLineChart_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D16E420D6E229B8192415B98DA06F813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCB037BD53E4A1B958C2E617B85A4F8 /* Pods-GSScrollableLineChart_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GSScrollableLineChart_Tests/Pods-GSScrollableLineChart_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GSScrollableLineChart_Tests/Pods-GSScrollableLineChart_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F7959867B7BB5E7E7B914B00FBCC1D88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 912D239E54482F8518B4B51CA2D20804 /* GSScrollableLineChart.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GSScrollableLineChart/GSScrollableLineChart-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GSScrollableLineChart/GSScrollableLineChart-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GSScrollableLineChart/GSScrollableLineChart.modulemap";
+				PRODUCT_MODULE_NAME = GSScrollableLineChart;
+				PRODUCT_NAME = GSScrollableLineChart;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F5E94AAF83D7194BE3F13D66BFA9C26 /* Build configuration list for PBXNativeTarget "Pods-GSScrollableLineChart_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01C684ABEFB0A76278A2F964B84E4B1 /* Debug */,
+				D16E420D6E229B8192415B98DA06F813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C16C344D225F095300EB0ACFE9F0E9 /* Build configuration list for PBXNativeTarget "GSScrollableLineChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A72AD9933BAFE1FC6DDA94FD0DC48A /* Debug */,
+				F7959867B7BB5E7E7B914B00FBCC1D88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F97855FCB7A6F24A5F47A4F8314387A6 /* Build configuration list for PBXNativeTarget "Pods-GSScrollableLineChart_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				833D9688E7C80DA6469E799EAC94E184 /* Debug */,
+				1F9E0E4F6898B8CBFA21B928199A6505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
