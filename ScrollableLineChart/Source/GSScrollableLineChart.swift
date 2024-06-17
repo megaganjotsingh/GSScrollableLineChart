@@ -22,7 +22,7 @@ extension PointEntry: Comparable {
     }
 }
 
-class LineChart: UIView {
+class GSScrollableLineChart: UIView {
     
     /// gap between each point
     let lineGap: CGFloat = 40.0

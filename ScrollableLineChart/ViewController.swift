@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var lineChart: LineChart!
+    @IBOutlet weak var lineChart: GSScrollableLineChart!
     
     override func viewDidLoad() {
         super.viewDidLoad()

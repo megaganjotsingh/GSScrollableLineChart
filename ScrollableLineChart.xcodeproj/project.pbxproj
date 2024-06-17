@@ -15,7 +15,7 @@
 		181D4C3F2B05290B0089493C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D4C3D2B05290B0089493C /* LaunchScreen.storyboard */; };
 		181D4C4A2B0529350089493C /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D4C472B0529330089493C /* CurveAlgorithm.swift */; };
 		181D4C4B2B0529350089493C /* DotCALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D4C482B0529340089493C /* DotCALayer.swift */; };
-		181D4C4C2B0529350089493C /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D4C492B0529340089493C /* LineChart.swift */; };
+		181D4C4C2B0529350089493C /* GSScrollableLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D4C492B0529340089493C /* GSScrollableLineChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		181D4C402B05290B0089493C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181D4C472B0529330089493C /* CurveAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
 		181D4C482B0529340089493C /* DotCALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotCALayer.swift; sourceTree = "<group>"; };
-		181D4C492B0529340089493C /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		181D4C492B0529340089493C /* GSScrollableLineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSScrollableLineChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			children = (
 				181D4C472B0529330089493C /* CurveAlgorithm.swift */,
 				181D4C482B0529340089493C /* DotCALayer.swift */,
-				181D4C492B0529340089493C /* LineChart.swift */,
+				181D4C492B0529340089493C /* GSScrollableLineChart.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 			files = (
 				181D4C4B2B0529350089493C /* DotCALayer.swift in Sources */,
 				181D4C372B0529080089493C /* ViewController.swift in Sources */,
-				181D4C4C2B0529350089493C /* LineChart.swift in Sources */,
+				181D4C4C2B0529350089493C /* GSScrollableLineChart.swift in Sources */,
 				181D4C332B0529070089493C /* AppDelegate.swift in Sources */,
 				181D4C352B0529070089493C /* SceneDelegate.swift in Sources */,
 				181D4C4A2B0529350089493C /* CurveAlgorithm.swift in Sources */,
